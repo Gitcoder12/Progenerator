@@ -3,6 +3,7 @@
 ## What Stays in Your Browser
 
 Your API keys are stored **only in browser localStorage**. They:
+
 - Are never transmitted to this repo's servers
 - Are never logged or tracked anywhere
 - Only leave your browser when calling their respective APIs
@@ -11,6 +12,7 @@ Your API keys are stored **only in browser localStorage**. They:
 ## GitHub API
 
 **Automatic (no key needed)**
+
 - Used for public repo searches
 - Rate limited: 60 requests/hour anonymous, 5000/hour with auth
 - Data: Public repo metadata only
@@ -18,6 +20,7 @@ Your API keys are stored **only in browser localStorage**. They:
 ## DeepSeek API
 
 **Required for AI analysis**
+
 - Your key: Stored locally in your browser
 - Cost: ~$0.001 per search (you control spending)
 - Data sent: Topic + public repo context
@@ -25,12 +28,14 @@ Your API keys are stored **only in browser localStorage**. They:
 
 ## For Self-Hosters
 
-If you deploy this yourself:
+Progenerator is a static HTML file. There is no build step and no server.
 
-1. **Never commit `.env` files** to git
-2. **Use `.env.example`** as a template
-3. **Keys stay client-side** — no server processing needed
-4. Optionally add a backend if you want to share API quotas
+1. Download `index.html`
+2. Open it in a browser (or host it anywhere static)
+3. That's it
+
+**Never commit `.env` files.** This repo has no `.env` and doesn't need
+one. If you fork and add tooling, keep secrets out of git.
 
 ## Questions?
 
