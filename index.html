@@ -47,7 +47,6 @@ body{
   line-height:1.65;
 }
 
-/* subtle grid bg */
 body::before{
   content:'';
   position:fixed;inset:0;pointer-events:none;z-index:0;
@@ -61,7 +60,6 @@ body::before{
 ::-webkit-scrollbar-track{background:var(--bg2)}
 ::-webkit-scrollbar-thumb{background:var(--amber);border-radius:2px}
 
-/* ── HEADER ── */
 header{
   position:sticky;top:0;z-index:200;
   padding:0.9rem 2rem;
@@ -96,7 +94,6 @@ header{
 .key-badge.has-key{color:var(--green);border-color:rgba(0,232,122,0.3)}
 .key-dot{width:6px;height:6px;border-radius:50%;background:currentColor}
 
-/* ── HERO ── */
 .hero{
   position:relative;z-index:1;
   padding:5rem 2rem 3.5rem;
@@ -130,7 +127,6 @@ header{
 }
 @keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 
-/* ── SEARCH BOX ── */
 .search-wrap{
   position:relative;z-index:1;
   max-width:640px;margin:0 auto;
@@ -181,7 +177,6 @@ header{
 }
 @keyframes spin{to{transform:rotate(360deg)}}
 
-/* Suggestions */
 .suggestions{
   display:flex;flex-wrap:wrap;gap:0.4rem;
   justify-content:center;margin-top:1rem;
@@ -194,7 +189,6 @@ header{
 }
 .sug:hover{border-color:var(--amber);color:var(--amber);background:var(--amber-dim)}
 
-/* ── STATUS ── */
 .status-line{
   position:relative;z-index:1;
   max-width:640px;margin:0.75rem auto 0;
@@ -207,7 +201,6 @@ header{
 .s-warn{color:var(--amber)}
 .s-err{color:var(--red)}
 
-/* ── RESULTS LAYOUT ── */
 .results{
   position:relative;z-index:1;
   max-width:1100px;margin:3rem auto 5rem;
@@ -216,7 +209,6 @@ header{
 }
 .results.visible{display:block}
 
-/* ── TOPIC HEADER ── */
 .topic-header{
   display:flex;align-items:center;justify-content:space-between;
   margin-bottom:2rem;flex-wrap:wrap;gap:1rem;
@@ -233,7 +225,6 @@ header{
 }
 .topic-meta b{color:var(--text2)}
 
-/* ── TWO COLUMNS ── */
 .two-col{
   display:grid;
   grid-template-columns:1fr 360px;
@@ -242,7 +233,6 @@ header{
 }
 @media(max-width:900px){.two-col{grid-template-columns:1fr}}
 
-/* ── SECTION LABEL ── */
 .sec-label{
   font-family:var(--mono);font-size:0.6rem;
   letter-spacing:3px;text-transform:uppercase;
@@ -254,7 +244,6 @@ header{
   background:var(--border);
 }
 
-/* ── IDEA CARDS ── */
 .ideas-list{display:flex;flex-direction:column;gap:0.85rem}
 
 .idea-card{
@@ -369,7 +358,6 @@ header{
 }
 .copy-idea-btn:hover{border-color:var(--cyan);color:var(--cyan)}
 
-/* ── REPOS SIDEBAR ── */
 .repos-sidebar{position:sticky;top:80px}
 .repo-cards{display:flex;flex-direction:column;gap:0.6rem}
 .repo-card{
@@ -403,13 +391,11 @@ header{
 }
 .repo-link:hover{color:var(--cyan)}
 
-/* ── SKELETON ── */
 .skel{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:1.4rem;animation:pulse 1.4s ease-in-out infinite}
 .sk{height:10px;border-radius:4px;background:var(--border2);margin-bottom:0.6rem}
 .sk.s{width:30%}.sk.m{width:55%}.sk.l{width:80%}.sk.f{width:100%}
 @keyframes pulse{0%,100%{opacity:0.35}50%{opacity:0.7}}
 
-/* ── SAVED SECTION ── */
 .saved-section{
   position:relative;z-index:1;
   max-width:1100px;margin:0 auto 5rem;
@@ -417,7 +403,6 @@ header{
 }
 .saved-section.visible{display:block}
 
-/* ── FILTER ROW ── */
 .filter-row{display:flex;gap:0.4rem;margin-bottom:1.25rem;flex-wrap:wrap}
 .fp{
   font-family:var(--mono);font-size:0.6rem;letter-spacing:1px;text-transform:uppercase;
@@ -428,7 +413,6 @@ header{
 .fp:hover{border-color:var(--amber);color:var(--amber)}
 .fp.on{background:var(--amber-dim);color:var(--amber);border-color:rgba(240,165,0,0.3)}
 
-/* ── TOAST ── */
 .toast{
   position:fixed;bottom:1.5rem;right:1.5rem;
   background:var(--surface2);border:1px solid var(--border2);
@@ -444,7 +428,6 @@ header{
 .td{width:6px;height:6px;border-radius:50%;background:var(--green)}
 .td.e{background:var(--red)}.td.w{background:var(--amber)}
 
-/* ── KEY MODAL ── */
 .modal-bg{
   position:fixed;inset:0;background:rgba(0,0,0,0.75);
   z-index:500;display:none;align-items:flex-end;justify-content:center;
@@ -482,7 +465,6 @@ header{
 }
 .modal-cancel:hover{border-color:var(--text3);color:var(--text)}
 
-/* ── MOBILE ── */
 @media(max-width:768px){
   header{padding:0.85rem 1.25rem}
   .hero{padding:3rem 1.25rem 2.5rem}
@@ -535,7 +517,6 @@ header{
 
 <div class="status-line" id="status-line"></div>
 
-<!-- RESULTS -->
 <div class="results" id="results">
   <div class="topic-header">
     <div class="topic-title">Ideas for <span id="topic-display"></span></div>
@@ -567,13 +548,11 @@ header{
   </div>
 </div>
 
-<!-- SAVED -->
 <div class="saved-section" id="saved-section">
   <div class="sec-label" style="margin-bottom:1rem">★ Saved Ideas</div>
   <div class="ideas-list" id="saved-list"></div>
 </div>
 
-<!-- KEY MODAL -->
 <div class="modal-bg" id="modal-bg" onclick="if(event.target===this)closeModal()">
   <div class="modal">
     <div class="modal-handle"></div>
@@ -591,7 +570,6 @@ header{
   </div>
 </div>
 
-<!-- TOAST -->
 <div class="toast" id="toast">
   <div class="td" id="td"></div>
   <span id="toast-msg"></span>
@@ -602,7 +580,10 @@ header{
 let S = {
   ideas: [],
   repos: [],
-  saved: JSON.parse(localStorage.getItem('prg_saved') || '[]'),
+  saved: (function(){
+    try { return JSON.parse(localStorage.getItem('prg_saved') || '[]'); }
+    catch { return []; }
+  })(),
   filter: 'all',
   busy: false,
   topic: ''
@@ -649,7 +630,10 @@ function quickSearch(el) {
 function setStatus(msg, type) {
   const el = document.getElementById('status-line');
   const cls = type === 'ok' ? 's-ok' : type === 'err' ? 's-err' : type === 'w' ? 's-warn' : '';
-  el.innerHTML = msg ? `<span class="${cls}">${type==='ok'?'✓':type==='err'?'✗':type==='w'?'⚠':'›'}</span>${msg}` : '';
+  if (!msg) { el.innerHTML = ''; return; }
+  const icon = type === 'ok' ? '✓' : type === 'err' ? '✗' : type === 'w' ? '⚠' : '›';
+  const safe = String(msg).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  el.innerHTML = `<span class="${cls}">${icon}</span>${safe}`;
 }
 
 // ── TOAST ──
@@ -667,7 +651,6 @@ function toast(msg, type = 'ok') {
 // ── GITHUB FETCH ──
 async function fetchGitHubRepos(topic) {
   setStatus(`Scanning GitHub for "${topic}" repos...`, '');
-  // fetch top repos by stars for this topic
   const queries = [
     `https://api.github.com/search/repositories?q=topic:${encodeURIComponent(topic.toLowerCase().replace(/\s+/g,'-'))}&sort=stars&order=desc&per_page=20`,
     `https://api.github.com/search/repositories?q=${encodeURIComponent(topic)}+in:name,description&sort=stars&order=desc&per_page=15`
@@ -679,6 +662,10 @@ async function fetchGitHubRepos(topic) {
   for (const url of queries) {
     try {
       const res = await fetch(url, { headers: { 'Accept': 'application/vnd.github.v3+json' } });
+      if (res.status === 403) {
+        setStatus('GitHub rate limit hit — results may be limited. Wait a minute.', 'w');
+        continue;
+      }
       if (!res.ok) continue;
       const data = await res.json();
       for (const r of (data.items || [])) {
@@ -697,7 +684,6 @@ async function fetchGitHubRepos(topic) {
     } catch { /* continue */ }
   }
 
-  // sort by stars, dedupe, top 12
   return results.sort((a,b) => b.stars - a.stars).slice(0, 12);
 }
 
@@ -712,27 +698,27 @@ async function runSearch() {
 
   S.busy = true;
   S.topic = topic;
+  S.filter = 'all';
+  document.querySelectorAll('.fp[data-f]').forEach(b => {
+    b.classList.toggle('on', b.dataset.f === 'all');
+  });
   setBusyUI(true);
 
   try {
-    // 1. GitHub scan
     const repos = await fetchGitHubRepos(topic);
     S.repos = repos;
     setStatus(`Found ${repos.length} repos. Analyzing gaps with AI...`, '');
     renderRepos(repos);
 
-    // 2. Show skeletons
     showSkeletons();
     document.getElementById('results').classList.add('visible');
     document.getElementById('topic-display').textContent = `"${topic}"`;
     document.getElementById('meta-repos').textContent = repos.length;
 
-    // 3. Build context from repos
     const repoContext = repos.slice(0, 15).map(r =>
       `- ${r.name} [${r.language}, ★${fmtStars(r.stars)}]${r.description ? ': ' + r.description.slice(0,100) : ''}${r.topics.length ? ` | topics: ${r.topics.slice(0,4).join(',')}` : ''}`
     ).join('\n');
 
-    // 4. DeepSeek call
     const systemPrompt = `You are a senior research engineer and technical strategist. Your job is to analyze what already exists in a technical domain on GitHub and identify UNEXPLORED, DIFFICULT problems that nobody has properly solved yet.
 
 You think like a researcher finding gaps in the literature — not like someone listing generic project ideas.
@@ -802,7 +788,6 @@ Return exactly this JSON structure:
     if (!Array.isArray(ideas) || !ideas.length) throw new Error('No ideas returned. Try again.');
 
     S.ideas = ideas.map((idea, i) => ({ ...idea, id: `${Date.now()}_${i}` }));
-    hideSkeletons();
     renderIdeas(S.ideas);
     document.getElementById('meta-ideas').textContent = ideas.length;
     setStatus(`${ideas.length} ideas ranked for "${topic}"`, 'ok');
@@ -920,7 +905,6 @@ function toggleSave(id) {
   }
   localStorage.setItem('prg_saved', JSON.stringify(S.saved));
   const btn = document.getElementById(`sb-${id}`);
-  const card = document.getElementById(`ic-${id}`);
   const isSaved = S.saved.some(s => s.id === id);
   if (btn) { btn.className = 'save-btn' + (isSaved ? ' on' : ''); btn.textContent = isSaved ? '★ SAVED' : '☆ SAVE'; }
   renderSaved();
@@ -968,10 +952,23 @@ function removeSaved(id) {
 
 // ── COPY ──
 function copyIdea(id, fromSaved = false) {
-  const idea = fromSaved ? S.saved.find(s=>s.id===id) : S.ideas.find(i=>i.id===id);
+  const idea = fromSaved ? S.saved.find(s => s.id === id) : S.ideas.find(i => i.id === id);
   if (!idea) return;
-  const t = `${idea.title}\n\n${idea.description}\n\nGap: ${idea.gap||''}\nDifficulty: ${idea.difficulty}\nTech: ${(idea.tech_stack||[]).join(', ')}\nScores — Impact:${idea.scores?.impact}/10 Novelty:${idea.scores?.novelty}/10`;
-  navigator.clipboard.writeText(t).then(()=>toast('Copied!')).catch(()=>toast('Copy failed','e'));
+  const t = `${idea.title}\n\n${idea.description}\n\nGap: ${idea.gap || ''}\nDifficulty: ${idea.difficulty}\nTech: ${(idea.tech_stack || []).join(', ')}\nScores — Impact:${idea.scores?.impact}/10 Novelty:${idea.scores?.novelty}/10`;
+
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(t).then(() => toast('Copied!')).catch(() => toast('Copy failed', 'e'));
+    return;
+  }
+  const ta = document.createElement('textarea');
+  ta.value = t;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); toast('Copied!'); }
+  catch { toast('Copy failed', 'e'); }
+  document.body.removeChild(ta);
 }
 
 // ── EXPORT ──
@@ -993,7 +990,9 @@ function showSkeletons() {
       <div class="sk s"></div>
     </div>`).join('');
 }
-function hideSkeletons() { /* renderIdeas replaces content */ }
+function hideSkeletons() {
+  document.getElementById('ideas-list').innerHTML = '';
+}
 
 // ── UI ──
 function setBusyUI(on) {
