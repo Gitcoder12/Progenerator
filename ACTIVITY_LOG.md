@@ -17,3 +17,12 @@ Static browser frontend using public GitHub repository search and a user-provide
 | YYYY-MM-DD | name | link | query, timestamp, provider | exact command and fixture | pass / fail / not run | evidence |
 
 Record exact search query, date, result limit, API behavior and model/provider configuration. Never log real API keys.
+
+## Portfolio documentation rollout — 2026-11-13
+
+- Documentation PR: https://github.com/Gitcoder12/Progenerator/pull/1
+- Added project-specific feature plan, company-fit mapping, two-level README guide and quality checklist.
+- Added or preserved contributor instructions and scoped agent/skills guidance as shown in the PR diff.
+- README now includes a plain-language explanation and a technical/research view without claiming unimplemented functionality.
+- Validation: documentation/source review only; no application runtime test or deployment is claimed by this documentation PR.
+- Status: draft PR, not merged.
