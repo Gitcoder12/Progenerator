@@ -53,3 +53,17 @@ See [LICENSE](LICENSE).
 - [Company and team fit](COMPANY_FIT.md) · [README explanation draft](README_ADDENDUM_DRAFT.md)
 - [README quality checklist](README_QUALITY_CHECKLIST.md)
 - [Contributing](CONTRIBUTING.md) · [Agent instructions](AGENTS.md) · [Agent skills](SKILLS.md)
+
+## Understanding the project
+
+### In plain language
+
+A project idea explorer that searches public GitHub repositories for a topic and uses AI to suggest possible gaps or new directions.
+
+### Technical and research view
+
+Static browser frontend using public GitHub repository search and a user-provided DeepSeek key for idea generation. It presents repository metadata and generated project suggestions. Search results are incomplete and generated ideas require human verification; the tool does not prove novelty or market demand.
+
+Document GitHub API query construction, result fields, rate limits, provider request format, prompt construction and browser storage. Explain how suggestions cite their source records.
+
+For future work, see [FEATURE_UPGRADE_PLAN.md](FEATURE_UPGRADE_PLAN.md), [ACTIVITY_LOG.md](ACTIVITY_LOG.md), [COMPANY_FIT.md](COMPANY_FIT.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
