@@ -32,3 +32,23 @@ This section supplements the maintainer-authored README above. The original text
 3. Require human/literature validation of novelty before presenting an idea as an actual research gap.
 
 **Verification status:** static source inspection only; live GitHub/DeepSeek calls and browser tests remain unverified.
+
+
+---
+
+## Branch Activity & Development History
+
+**Audit date:** 2026-11-18 · **Comparison base:** `main`
+
+| Branch | Difference from `main` | Observed work / changed paths |
+|---|---:|---|
+| `docs/portfolio-operating-kit-2026-11-13` | 4 ahead / 3 behind | Activity log, agent guidance, company-fit notes, feature plan and skills; README has additions and removals |
+| `docs/project-status-2026-11-16-progenerator` | 1 / 1 | Project status snapshot: `PROJECT_STATUS.md` |
+| `docs/status-inventory-2026-11-16-v1` | 1 / 1 | Project status inventory: `PROJECT_STATUS.md` |
+
+### Open pull requests observed during this audit
+
+- [PR #2 — project status snapshot](https://github.com/Gitcoder12/Progenerator/pull/2)
+- [PR #1 — project handbook and evaluation roadmap](https://github.com/Gitcoder12/Progenerator/pull/1)
+
+**Review note:** The portfolio branch removes README content as well as adding docs. Inspect its diff before merging. No branches have been merged or deleted by this documentation update.
