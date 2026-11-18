@@ -32,3 +32,10 @@ This section supplements the maintainer-authored README above. The original text
 3. Require human/literature validation of novelty before presenting an idea as an actual research gap.
 
 **Verification status:** static source inspection only; live GitHub/DeepSeek calls and browser tests remain unverified.
+
+---
+
+## Examples Used
+- Finding existing GitHub projects for a proposed idea
+- Identifying underserved features in a developer-tool category
+- Validating a generated idea against repositories and research
