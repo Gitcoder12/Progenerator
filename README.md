@@ -2,6 +2,26 @@
 AI-powered project idea generator. Scans GitHub for what already exists, then uses DeepSeek to find unexplored gaps worth building.
 Live: https://gitcoder12.github.io/Progenerator/
 
+## Open the website locally (VS Code)
+
+1. Clone the repository and open the folder in VS Code:
+
+```bash
+git clone https://github.com/Gitcoder12/Progenerator.git
+cd Progenerator
+```
+
+2. Start a local static web server from the repository root:
+
+```bash
+python -m http.server 8000
+```
+
+3. Open **http://localhost:8000** in your browser.
+4. Keep the terminal running while using the site; press **Ctrl+C** to stop the server.
+
+No npm build step is required for the static page. GitHub API and DeepSeek-powered features depend on their respective services and configuration.
+
 
 ---
 
